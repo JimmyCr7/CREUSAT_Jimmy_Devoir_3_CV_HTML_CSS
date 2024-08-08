@@ -25,7 +25,7 @@ h1, h2, h3{
     font-family: 'Lato';
 }
 
-a, p{
+a, p, li{
     font-family: 'Raleway';
 }
 
@@ -95,6 +95,72 @@ header > div:last-of-type > div > div{
     flex-direction: row;
     align-items: center;
     margin-right: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+main h3{
+    color: #17abb3;
+}
+
+main > section:first-of-type{
+    width: 30%;
+    background-color: #e3e3e3;
+    padding: 20px 40px;
+}
+
+main > section:first-of-type img{
+    display: block;
+    width: 20px;
+    height: 20px;
+    filter: invert(63%) sepia(50%) saturate(5836%) hue-rotate(147deg) brightness(97%) contrast(82%);
+}
+
+main > section:first-of-type > article div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px 0px;
+}
+
+main > section:first-of-type > article:not(article:first-of-type){
+    margin-top: 30px;
+}
+
+main > section:first-of-type > article:not(article:first-of-type) div{
+    margin: 12px 0px;
+}
+
+main > section:first-of-type > article div p:nth-of-type(1){
+    font-weight: bold;
+}
+
+main > section:first-of-type > article div p{
+    margin: 0px;
+}
+
+main > section:first-of-type ul{
+    padding-left: 0px;
+    list-style: none;
+    
+}
+
+main > section:first-of-type li::before{
+    content: "￭ ";
+    color: #17abb3;
+    margin-right: 5px;
+}
+
+main > section:first-of-type li{
+    margin-bottom: 7px;
+}
+
+main > section:last-of-type{
+    width: 70%;
 }
 
 footer{
