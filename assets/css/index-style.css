@@ -118,6 +118,8 @@ main > section > article:not(article:first-of-type){
     margin-top: 30px;
 }
 
+/* SECTION DE GAUCHE */
+
 main > section:first-of-type{
     width: 30%;
     background-color: #e3e3e3;
@@ -166,6 +168,9 @@ main > section:first-of-type li{
     margin-bottom: 7px;
 }
 
+/* FIN SECTION DE GAUCHE */
+/* SECTION DE DROITE */
+
 main > section:last-of-type{
     width: 70%;
 }
@@ -182,6 +187,11 @@ main > section:last-of-type div:hover{
     border-left: 3px solid #17abb3;
     background-color: #e3e3e3;
     padding: 10px;
+}
+
+main > section:last-of-type article:first-of-type p{
+    text-indent: 40px;
+    text-align: justify;
 }
 
 main > section:last-of-type div p{
@@ -201,6 +211,8 @@ main > section:last-of-type div p:last-of-type{
     font-size: 0.8em;
     font-style: italic;
 }
+
+/* FIN SECTION DE DROITE */
 
 footer{
     background-color: #17abb3;
