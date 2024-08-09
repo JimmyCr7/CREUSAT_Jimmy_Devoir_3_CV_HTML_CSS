@@ -21,6 +21,18 @@ body{
     padding: 0;
 }
 
+h1{
+    font-size: 2.3em;
+}
+
+h2{
+    font-size: 1.8em;
+}
+
+h3{
+    font-size: 1.3em;
+}
+
 h1, h2, h3{
     font-family: 'Lato';
 }
@@ -43,17 +55,6 @@ header{
     color: white;
 }
 
-header img:nth-of-type(1){
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    border: 4px solid white;
-}
-
-header img:first-of-type:hover{
-    cursor: zoom-in;
-}
-
 header h1{
     margin: 0px;
 }
@@ -66,6 +67,18 @@ header > div:first-of-type{
     width: 30%;
 }
 
+header > div:first-of-type img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-left: 30px;
+}
+
+header > div:first-of-type img:hover{
+    cursor: zoom-in;
+}
+
 header > div:last-of-type{
     width: 70%;
 }
@@ -75,8 +88,6 @@ header > div:last-of-type img{
     width: 24px;
     height: 24px;
     margin-right: 10px;
-    border-radius: initial;
-    border: initial;
     filter: invert(100%);
 }
 
@@ -88,7 +99,7 @@ header a{
 
 header > div:last-of-type > div{
     display: grid;
-    margin: auto;
+    margin: 26px auto 0px auto;
     grid-template-columns: repeat(2, max-content);
     grid-template-rows: repeat(2, auto);
     width: max-content;
@@ -115,7 +126,7 @@ main > section{
 }
 
 main > section > article:not(article:first-of-type){
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 /* SECTION DE GAUCHE */
@@ -180,7 +191,7 @@ main > section:last-of-type div{
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin: 16px 0px;
 }
 
 main > section:last-of-type div:hover{
@@ -216,7 +227,7 @@ main > section:last-of-type div p:last-of-type{
 
 footer{
     background-color: #17abb3;
-    padding: 12px 0px;
+    padding: 20px 0px;
 }
 
 footer > div{
@@ -242,4 +253,5 @@ footer > p{
     font-style: italic;
     color: white;
     text-align: center;
+    margin-bottom: 0;
 }
